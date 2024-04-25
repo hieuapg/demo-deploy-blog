@@ -22,4 +22,16 @@ body {
     color: white;
 }
 
+.hero-section 
+{
+  position: relative;
+  background-image: url('/public/hero-img.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 690px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
