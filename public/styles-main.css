@@ -1,0 +1,25 @@
+.container-lg {
+    margin-top: 90px;
+    padding: 50px;
+    border-radius: 10px;
+    color: white;
+}
+
+body {
+    background-color: black !important;
+}
+
+.icon-contact .cont-item {
+    padding: 0 10px; /* Adjust the gap between list items */
+    list-style-type: none;
+    display: inline-block;
+    padding-top: 20px;
+    font-size: 21px;
+    float: left;
+}
+
+.brand {
+    color: white;
+}
+
+

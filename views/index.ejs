@@ -4,9 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .hero-section 
+    {
+      position: relative;
+      background-image: url('/public/hero-img.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 690px;
+    }
+    </style>
+    <link href="/public/styles-main.css" rel="stylesheet">
 </head>
 <body>
     <%- include("partials/header.ejs") %>
-
+    <header class="hero-section"></header>
+    <div class="container-lg top-container" id="about">
+        <div class="row">
+          <div class="col-lg-6">
+            <p class="display-1 cursive-font" style="font-size: 36px; font-weight: bold;">College student. Tech enthusiast. Internship seeker. Solo traveler.</p>
+            <p class="move-up" style="font-size: 19.5px;">I'm a Computer Engineering major at the University of South Florida<br>with experience in Data Analysis and Machine Learning as a Research Assistant, applying my skills to make life easier through technology.<br><br>When I'm not working, I love exploring the robust Tampa Bay.<br>During holidays, I often make solo trips across America.<br>When I'm tired, my cozy home in Austin, TX is where I return. </p>
+            <div class="icon-contact">
+                <ul class="cont-item">
+                    <li class="cont-item px-3">
+                        <a class="brand" href="https://www.github.com/hieuapg" target="_blank"><i class="fa-brands fa-github fa-xl"></i></a>
+                      </li>
+                      <!-- LinkedIn -->
+                      <li class="cont-item px-3">
+                        <a class="brand" href="https://www.linkedin.com/in/hieu-tran-448824284/" target="_blank"><i class="fa-brands fa-linkedin fa-xl"></i></i></a>
+                      </li>
+                      <li class="cont-item px-3">
+                        <a class="brand" href="https://www.facebook.com/tran.thanhhieu.944/" target="_blank"><i class="fa-brands fa-facebook fa-xl"></i></i></a>
+                      </li>
+                      <li class="cont-item px-3">
+                        <a class="brand" href="https://www.instagram.com/hiu.apg/" target="_blank"><i class="fa-brands fa-instagram fa-xl"></i></i></a>
+                      </li>
+                </ul>
+            </div>
+          </div>
+          <div class="col-lg-6 align-center">
+            <img src="/public/nyc-img.jpg" style="border-radius: 20px; margin-left: 20px;">
+          </div>
+        </div>
+      </div>
 </body>
 </html>
