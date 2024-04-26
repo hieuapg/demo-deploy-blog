@@ -17,6 +17,16 @@ body {
     font-size: 21px;
 }
 
+.proj-box ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
+
+.proj-box ul li {
+  margin-right: 40px; /* Adjust spacing between images */
+}
+
 .brand {
     color: white;
 }
@@ -25,7 +35,7 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 columns */
     grid-template-rows: repeat(2, auto); /* 2 rows with auto height */
-    gap: 35px; /* Adjust the gap between grid items */
+    gap: 75px; /* Adjust the gap between grid items */
     color: white;
   }
 
