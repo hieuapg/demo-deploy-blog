@@ -15,17 +15,42 @@ body {
     display: inline-block;
     padding-top: 20px;
     font-size: 21px;
-    float: left;
 }
 
 .brand {
     color: white;
 }
 
-.hero-section 
+.project-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-template-rows: repeat(2, auto); /* 2 rows with auto height */
+    gap: 35px; /* Adjust the gap between grid items */
+    color: white;
+  }
+
+  .proj-box {
+    background-color: black;
+    border-radius: 10px;
+  }
+
+  .project-section h2 {
+    margin: 24px 0px;
+    font-size: 20px;
+  }
+
+  .proj-box img {
+    width: 39px;
+  }
+
+  .proj-para {
+    font-size: 16px;
+  }
+
+  .hero-section 
 {
   position: relative;
-  background-image: url('/public/hero-img.jpg');
+  background-image: url('/public/images/hero-img.jpg');
   background-size: cover;
   background-position: center;
   height: 690px;
