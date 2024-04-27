@@ -35,7 +35,7 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 columns */
     grid-template-rows: repeat(2, auto); /* 2 rows with auto height */
-    gap: 75px; /* Adjust the gap between grid items */
+    gap: 36px; /* Adjust the gap between grid items */
     color: white;
   }
 
