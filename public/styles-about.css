@@ -1,0 +1,28 @@
+.hero-section
+{
+  position: relative;
+  background-image: url('/public/images/airplane-flying-over-mountain-range-at-sunset-free-photo.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 900px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container-lg {
+    margin-top: 90px;
+    padding: 50px;
+    border-radius: 10px;
+    color: white;
+}
+
+body {
+    background-color: black !important;
+}
+
+
+.col-lg-6 {
+    width: 950px !important;
+}
