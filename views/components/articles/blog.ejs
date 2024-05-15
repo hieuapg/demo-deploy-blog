@@ -13,17 +13,23 @@
     <h1 class="mb-4">My Blog</h1>
     <a href="/blog/new" class="btn btn-success">New Blog</a>
 
-    <% blog.forEach(blog => { %>
+    <% blog.forEach(post => { %>
       <div class="card mt-4">
         <div class="card-body">
-          <h4 class="card-title"><%= blog.title %></h4>
+          <h4 class="card-title"><%= post.title %></h4>
           <div class="card-subtitle text-muted mb-2">
-            <%= blog.createdAt.toLocaleDateString() %>
+            <%= post.date.toLocaleDateString() %>
           </div>
-          <div class="card-text mb-2"><%= blog.description %></div>
+          <div class="card-text mb-2"><%= post.description %></div>
+          <a href="/articles/<%= post.id %>" class="btn btn-primary">View</a>
+          <a href="/articles/<%= post.id %>/edit" class="btn btn-warning">Edit</a>
+          <form action="/articles/<%= post.id %>?_method=DELETE" method="POST" class="d-inline">
+            <button type="submit" class="btn btn-danger">Delete</button>
+          </form>
         </div>
       </div> 
     <% }) %>
   </div>
+  <a style="margin-top: 20px;"><%- include("../../partials/footer.ejs") %></a>
 </body>
 </html>

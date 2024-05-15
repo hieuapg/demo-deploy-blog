@@ -1,14 +1,18 @@
 const express = require('express');
-const app = express();
-const articleRouter = require('./views/components/articles/routes/articles')
-
-const port = 3000;
 const path = require('path');
+const methodOverride = require('method-override');
+const articleRouter = require('./views/components/articles/routes/articles');
 
-app.use('/blog', articleRouter)
+const app = express();
+const port = 3000;
+
+// Middleware
+app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.urlencoded({ extended: true }));
+app.use(methodOverride('_method'));
+
 // Set EJS as the view engine
 app.set('view engine', 'ejs');
-// Set the directory for views
 app.set('views', path.join(__dirname, 'views'));
 
 // Serve static files from the current directory
@@ -16,7 +20,7 @@ app.use(express.static(__dirname));
 
 // Route handler for the root route
 app.get('/', (req, res) => {
-  res.render('index.ejs');
+  res.render('index');
 });
 
 // Route handler for the '/about' route
@@ -24,23 +28,13 @@ app.get('/about', (req, res) => {
   res.render('components/about.ejs');
 });
 
+// Route handler for the '/contact' route
 app.get('/contact', (req, res) => {
   res.render('components/contact.ejs');
 });
 
-app.get('/blog', (req, res) => {
-  const blog = [{
-    title: 'Test Blog',
-    createdAt: new Date(),
-    description: 'Test description',
-  },
-  {
-    title: 'Test Blog',
-    createdAt: new Date(),
-    description: 'Test description',
-  }];
-  res.render('components/articles/blog.ejs', { blog: blog });
-});
+// Integrate the articleRouter for handling CRUD operations for blog posts
+app.use('/blog', articleRouter);
 
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
