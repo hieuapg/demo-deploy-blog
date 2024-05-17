@@ -12,13 +12,17 @@ router.get('/new', (req, res) => {
     res.render('components/articles/new');
 });
 
+let lastId = 3;
+
 // Route to handle creating a new blog post
 router.post('/', (req, res) => {
     const { title, description } = req.body;
-    const newPost = { id: Date.now().toString(), title, description, date: new Date() };
-
+    const newPostId = lastId + 1;
+    const newPost = { id: newPostId, title, description, date: new Date() };
     posts.push(newPost);
     res.redirect('/blog');
+
+    lastId = newPostId;
 });
 
 // Route to display a single blog post

@@ -4,8 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="/public/styles-contact.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMkOZ4I6KTFPZ6Vt5yS5RQJ5Lr5KLLw5GDLKq5Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <body>
-    <p>Hello</p>
+    <%- include("../partials/header.ejs") %>
+    <div class="container-lg" style="width: 1000px;">
+    <p style="font-weight:bolder; font-size: 23px; color: orange">in case you are interested in talking about work, hobbies, coding and life,</p>
+    <h1 style="font-weight: bolder; margin-top: -7px; font-size: 55px;">Just drop me a line!<br>Let's connect!</h1>
+    <div class="container">
+        <div class="row" style="gap: 10px;">
+            <div class="col-md-4" style="margin-top: 30px;">
+              <div class="card mt-4" style="border-radius: 10px; background-color: orange;">
+                <div class="card-body" style="display: flex; justify-content: center; align-items: center; text-align: center; height: 100%;">
+                    <i class="fa fa-download" aria-hidden="true" style="color: black; font-size: 30px;"></i>
+                    <h1 style="color: black; font-size: 24px;margin-left: 10px;">VIEW MY RESUME</h1>
+                </div>                
+              </div>
+            </div>
+            <div class="col-md-4" style="margin-top: 30px;">
+                <div class="card mt-4" style="border-radius: 10px;background-color: lightcoral;">
+                    <div class="card-body" style="display: flex; justify-content: center; align-items: center; text-align: center; height: 100%;">
+                        <i class="fa-solid fa-envelope" style=" font-size: 30px; color: black" href="gmail.com"></i>
+                        <h1 style="color: black; font-size: 24px; margin-left: 10px;">EMAIL ME</h1>
+                    </div>
+                </div>
+              </div>
+              <div class="col-md-4" style="margin-top: 30px;"> 
+                <a href="https://www.linkedin.com/in/hieu-tran-448824284/">
+                <div class="card mt-4" style="border-radius: 10px; background-color: #0077b5">
+                    <div class="card-body" style="display: flex; justify-content: center; align-items: center; text-align: center; height: 100%;">
+                        <i class="fa-brands fa-linkedin-in" style=" font-size: 30px; color:white;"></i>
+                        <h1 style="color: white; font-size: 24px;margin-left: 10px; margin-top: 9px;">MY LINKEDIN</h1>
+                    </div>
+                </div>
+            </a>
+              </div>
+        </div>
+      </div>
+    </div>
 </body>
 </html>

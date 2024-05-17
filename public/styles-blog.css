@@ -1,0 +1,55 @@
+.hero-section
+{
+  position: relative;
+  background-image: url('https://i.etsystatic.com/21591747/r/il/5f0066/2196515905/il_fullxfull.2196515905_clk5.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 700px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body {
+    background-color: black !important;
+}
+
+.overlay {
+  position: absolute; /* Absolute positioning to overlay on the background */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.title {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  background-color: orangered; /* Button color */
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.cta-button:hover {
+  background-color: #e63600; /* Button hover color */
+}
