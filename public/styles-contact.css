@@ -22,3 +22,7 @@ body {
 .card-body h1 {
     display: inline;
 }
+
+.download-link {
+    text-decoration: none;
+}
